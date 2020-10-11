@@ -4,6 +4,6 @@ Automation of WiFi LED bulb control. Over MQTT(Tasmota firmware) and TCP direct 
 ## Script execution
 Script should be executed on OpenWRT device, it shall start with
 
-´´´
+```
 #!/bin/sh
-´´´
+```
