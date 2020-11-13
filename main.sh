@@ -33,12 +33,12 @@ while true; do
     echo -n -e "\x71\x24\x0f\xa4" | nc zar3 5577
     echo btn2b
   elif [ "$line" == "btn2c" ] ; then
-    mosquitto_pub -h 192.168.1.1 -t cmnd/zas1/power -m 1 -q 1
+    mosquitto_pub -h 192.168.1.1 -t cmnd/zar0/color1 -m "#0000000080" -q 1
     echo -n -e "\x31\x00\x00\x00\x20\x00\x0f\x60" | nc zar1 5577
     echo -n -e "\x31\x00\x00\x00\x20\x00\x0f\x60" | nc zar2 5577
     echo btn2c
   elif [ "$line" == "btn2_e" ] ; then
-    mosquitto_pub -h 192.168.1.1 -t cmnd/zar0/color1 -m "#00ff000000" -q 1
+    mosquitto_pub -h 192.168.1.1 -t cmnd/zar0/color1 -m "#ff00000000" -q 1
     echo -n -e "\x31\xff\x00\x00\x00\x00\xf0\x20" | nc zar1 5577
     echo -n -e "\x31\xff\x00\x00\x00\x00\xf0\x20" | nc zar2 5577
     echo btn2d
@@ -51,4 +51,3 @@ while true; do
   killall mosquitto_sub
   )
 done
-
