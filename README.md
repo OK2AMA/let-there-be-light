@@ -11,7 +11,11 @@ The project is written like BASH script for long-term sustainability on various 
 ### HW description
 
 server - OpenWRT router
+
 led bulb - E27 7W RBBCW Led bulb with ESP8266 (Magich Home Android app)
+
+physical buttons: https://github.com/OK2AMA/push-button
+
 anything with MQTT in/out api
 
 
