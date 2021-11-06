@@ -26,3 +26,15 @@ Script should be executed on OpenWRT device, it shall start with:
 ```
 #!/bin/sh
 ```
+
+## Command examples
+
+Subscribe all topic
+```
+mosquitto_sub -v -h 192.168.1.1 -p 1883 -t '#'
+```
+
+## Authentification
+
+There is no password or login.
+
