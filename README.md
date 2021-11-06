@@ -38,3 +38,13 @@ mosquitto_sub -v -h 192.168.1.1 -p 1883 -t '#'
 
 There is no password or login.
 
+## Auto start script after power-on router
+
+```
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+./root/iot/main.sh
+exit 0
+```
+
+
